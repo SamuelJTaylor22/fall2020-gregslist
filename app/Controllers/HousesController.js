@@ -49,8 +49,6 @@ function _drawForm(){
 //Public
 export default class HousesController {
   constructor() {
-    _drawHouses();
-    _drawForm()
   }
 
   createHouse() {
