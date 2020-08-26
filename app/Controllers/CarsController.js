@@ -14,7 +14,7 @@ function _drawCars() {
 function _drawForm(){
   let cars = STORE.State.cars
   let template = ''
-  template += cars[0].formTemplate
+  template = cars[0].formTemplate
   document.getElementById('form').innerHTML = template
 }
 
@@ -23,6 +23,7 @@ export default class CarsController {
   constructor() {
     console.log(5)
     _drawCars();
+    _drawForm()
   }
 
   createCar() {
