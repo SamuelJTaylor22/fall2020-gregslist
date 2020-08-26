@@ -60,4 +60,9 @@ export default class CarsController {
     carsService.bid(id);
     _drawCars();
   }
+
+  drawPage(){
+    _drawCars();
+    _drawForm()
+  }
 }
