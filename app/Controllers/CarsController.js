@@ -1,9 +1,9 @@
 import carsService from "../Services/CarsService.js";
 import STORE from "../store.js";
-console.log(3)
+
 // private
 function _drawCars() {
-  console.log(6)
+
   let cars = STORE.State.cars
   let template = ''
   // NOTE when you have a collection of items, they will need to be added to the template in a loop
@@ -52,7 +52,6 @@ function _drawForm(){
 //Public
 export default class CarsController {
   constructor() {
-    console.log(5)
     _drawCars();
     _drawForm()
   }
@@ -94,6 +93,9 @@ export default class CarsController {
 
   drawPage(){
     _drawCars();
-    _drawForm()
+    _drawForm();
+    document.getElementById("cars").setAttribute("class", "nav-link active")
+    document.getElementById("homes").setAttribute("class", "nav-link")
+    document.getElementById("jobs").setAttribute("class", "nav-link")
   }
 }

@@ -87,6 +87,9 @@ export default class HousesController {
 
   drawPage(){
     _drawHouses();
-    _drawForm()
+    _drawForm();
+    document.getElementById("homes").setAttribute("class", "nav-link active")
+    document.getElementById("jobs").setAttribute("class", "nav-link")
+    document.getElementById("cars").setAttribute("class", "nav-link")
   }
 }

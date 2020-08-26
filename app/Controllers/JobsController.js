@@ -51,7 +51,10 @@ export default class JobsController{
 
  drawPage(){
   _drawJobs();
-  _drawForm()
+  _drawForm();
+  document.getElementById("jobs").setAttribute("class", "nav-link active")
+  document.getElementById("homes").setAttribute("class", "nav-link")
+  document.getElementById("cars").setAttribute("class", "nav-link")
  }
 
  addJob(){
