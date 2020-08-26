@@ -32,39 +32,7 @@ export default class Car {
   }
 
   get formTemplate(){
-    return `
-    <div class="col">
-                <form onsubmit="app.carsController.createCar()" class="form-inline">
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="make">Make</label>
-                        <input type="text" name="make" id="make" class="form-control" placeholder="Make...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="model">Model</label>
-                        <input type="text" name="model" id="model" class="form-control" placeholder="Model...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="year">Year</label>
-                        <input type="number" name="year" id="year" class="form-control" placeholder="Year..." min="1900"
-                            max="2021">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="price">Price</label>
-                        <input type="number" name="price" id="price" class="form-control" placeholder="Price...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="description">Description</label>
-                        <input type="text" name="description" id="description" class="form-control"
-                            placeholder="Description...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="img">Image Url</label>
-                        <input type="url" name="img" id="img" class="form-control" placeholder="Image Url...">
-                    </div>
-                    <button type="submit" class="btn btn-outline-success">Add Car</button>
-                </form>
-            </div>
-    `
+    return 
 
   }
 }

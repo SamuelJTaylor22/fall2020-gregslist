@@ -31,40 +31,4 @@ export default class House {
     </div>`
   }
 
-  get formTemplate(){
-    return `
-    <div class="col">
-                <form onsubmit="app.housesController.createHouse()" class="form-inline">
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="bed">Bedroom Amount</label>
-                        <input type="text" name="bed" id="bed" class="form-control" placeholder="amount...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="bath">Bathroom Amount</label>
-                        <input type="text" name="bath" id="bath" class="form-control" placeholder="Bathroom...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="year">Year</label>
-                        <input type="number" name="year" id="year" class="form-control" placeholder="Year..." min="1900"
-                            max="2021">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="price">Price</label>
-                        <input type="number" name="price" id="price" class="form-control" placeholder="Price...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="description">Description</label>
-                        <input type="text" name="description" id="description" class="form-control"
-                            placeholder="Description...">
-                    </div>
-                    <div class="form-group p-1">
-                        <label class="mr-1" for="img">Image Url</label>
-                        <input type="url" name="img" id="img" class="form-control" placeholder="Image Url...">
-                    </div>
-                    <button type="submit" class="btn btn-outline-success">Add House</button>
-                </form>
-            </div>
-    `
-
-  }
 }
